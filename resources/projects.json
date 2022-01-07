@@ -1,0 +1,228 @@
+{
+    "projects": [
+        {
+            "id": "PokéApp Finder",
+            "name": "PokéApp Finder",
+            "description": "Proyecto particular de búsqueda de pokémones (1ª generación), el cual consiste en mostrar el detalle de cada uno eligiéndolos de una lista pre cargada. Muestra información como peso, tamaño, tipo, ataques, gráfico con habilidades, entre otras. Adicionalmente se creó una sección donde se específica la documentación de la API consultada para obtener dicha información.",
+            "url": "https://finder-pokeapp.herokuapp.com/",
+            "technologies": [
+                {
+                    "name": "HTML5",
+                    "logo": "img/logos/html5.png"
+                },
+                {
+                    "name": "NodeJS",
+                    "logo": "img/logos/nodejs.png"
+                },
+                {
+                    "name": "Bootstrap 4",
+                    "logo": "img/logos/bootstrap.png"
+                },
+                {
+                    "name": "AngularJS",
+                    "logo": "img/logos/angularjs.png"
+                }
+            ]
+        },
+        {
+            "id": "Dalum",
+            "name": "Dalum Website",
+            "description": "Proyecto particular de página web de Vidriería Dalum el cual da a conocer todos los servicios ofrecidos por esta Empresa de índole familiar. Se rediseño para que tuviera visualización responsiva, mejora en su maquetación y edición de colores de acuerdo a los pertenecientes a la empresa en sí",
+            "url": "",
+            "technologies": [
+                {
+                    "name": "HTML5",
+                    "logo": "img/logos/html5.png"
+                },
+                {
+                    "name": "NodeJS",
+                    "logo": "img/logos/nodejs.png"
+                },
+                {
+                    "name": "Bootstrap 4",
+                    "logo": "img/logos/bootstrap.png"
+                },
+                {
+                    "name": "AngularJS",
+                    "logo": "img/logos/angularjs.png"
+                }
+            ]
+        },
+        {
+            "id": "APIM",
+            "name": "APIM ClaudIA",
+            "description": "Proyecto que tiene como finalidad entregar la documentación de las APIS utilizadas por el chatBot ClaudIA, donde se específican datos importantes como los campos, origenes, tipos, entre otros. Adicionalmente posee un mantenedor para crear y editar APIS y/o endpoints.",
+            "url": "",
+            "technologies": [
+                {
+                    "name": "HTML5",
+                    "logo": "img/logos/html5.png"
+                },
+                {
+                    "name": "NodeJS",
+                    "logo": "img/logos/nodejs.png"
+                },
+                {
+                    "name": "Bootstrap 4",
+                    "logo": "img/logos/bootstrap.png"
+                },
+                {
+                    "name": "ReactJS",
+                    "logo": "img/logos/reactjs.png"
+                },
+                {
+                    "name": "SQLServer",
+                    "logo": "img/logos/sqlserver.png"
+                },
+                {
+                    "name": "AWS",
+                    "logo": "img/logos/aws.png"
+                }
+            ]
+        },
+        {
+            "id": "ClaudIA",
+            "name": "ClaudIA ChatBot",
+            "description": "Proyecto basado en Inteligencia Artificial (IA) el cual consiste en implementar y expandir conocimientos de un chatBot orientado al servicio de los clientes Entel. Entregando información rápida, eficiente, coherente y precisa basada en las inquietudes más comúnes de los mismos.",
+            "url": "",
+            "technologies": [
+                {
+                    "name": "HTML5",
+                    "logo": "img/logos/html5.png"
+                },
+                {
+                    "name": "NodeJS",
+                    "logo": "img/logos/nodejs.png"
+                },
+                {
+                    "name": "Bootstrap 4",
+                    "logo": "img/logos/bootstrap.png"
+                },
+                {
+                    "name": "ReactJS",
+                    "logo": "img/logos/reactjs.png"
+                },
+                {
+                    "name": "SQLServer",
+                    "logo": "img/logos/sqlserver.png"
+                },
+                {
+                    "name": "AWS",
+                    "logo": "img/logos/aws.png"
+                }
+            ]
+        },
+        {
+            "id": "E-learning",
+            "name": "E-learning",
+            "description": "Plataforma creada para la capacitacion interna de los colaboradores de CCAF 18 de Septiembre con el fin de pulir, adquirir y mejorar conocimientos relacionados con el negocio y los flujos de trabajo del rubro.",
+            "url": "",
+            "technologies": [
+                {
+                    "name": "HTML5",
+                    "logo": "img/logos/html5.png"
+                },
+                {
+                    "name": "C#",
+                    "logo": "img/logos/nodejs.png"
+                },
+                {
+                    "name": "Bootstrap 3",
+                    "logo": "img/logos/bootstrap.png"
+                },
+                {
+                    "name": "AngularJS",
+                    "logo": "img/logos/reactjs.png"
+                },
+                {
+                    "name": "SQLServer",
+                    "logo": "img/logos/sqlserver.png"
+                }
+            ]
+        },
+        {
+            "id": "Agenda",
+            "name": "Agenda Virtual",
+            "description": "Sistema orientado a la administración y visualización de las horas agendadas por los afiliados a Caja18. Esta plataforma fue desarrollada para uso interno de los colaboradores y ejecutivos CallCenter, para de esta forma tener un mejor control de los agendamientos.",
+            "url": "",
+            "technologies": [
+                {
+                    "name": "HTML5",
+                    "logo": "img/logos/html5.png"
+                },
+                {
+                    "name": "C#",
+                    "logo": "img/logos/nodejs.png"
+                },
+                {
+                    "name": "Bootstrap 3",
+                    "logo": "img/logos/bootstrap.png"
+                },
+                {
+                    "name": "AngularJS",
+                    "logo": "img/logos/reactjs.png"
+                },
+                {
+                    "name": "SQLServer",
+                    "logo": "img/logos/sqlserver.png"
+                }
+            ]
+        },
+        {
+            "id": "S.A.C.",
+            "name": "S.A.C.",
+            "description": "Plataforma de Sistema de Atención al Cliente la cual cumple el objetivo de consultar, crear, visualizar y tener mejor feedback de reclamos, felicitaciones, consultas, etc realizadas por los afiliados mediante la página web, CallCenter o entidades relacionadas al rubro social.",
+            "url": "",
+            "technologies": [
+                {
+                    "name": "HTML5",
+                    "logo": "img/logos/html5.png"
+                },
+                {
+                    "name": "C#",
+                    "logo": "img/logos/nodejs.png"
+                },
+                {
+                    "name": "Bootstrap 3",
+                    "logo": "img/logos/bootstrap.png"
+                },
+                {
+                    "name": "AngularJS",
+                    "logo": "img/logos/reactjs.png"
+                },
+                {
+                    "name": "SQLServer",
+                    "logo": "img/logos/sqlserver.png"
+                }
+            ]
+        },
+        {
+            "id": "Gestión de Campaña",
+            "name": "Gestión de Campaña",
+            "description": "Plataforma de administración orientada a créditos sociales, reprogramaciones, licencias médicas, etc, la cual cumple la función de entregar a los ejecutivos una visión macro y micro de los distintos beneficios entregados por la entidad.",
+            "url": "",
+            "technologies": [
+                {
+                    "name": "HTML5",
+                    "logo": "img/logos/html5.png"
+                },
+                {
+                    "name": "C#",
+                    "logo": "img/logos/nodejs.png"
+                },
+                {
+                    "name": "Bootstrap 3",
+                    "logo": "img/logos/bootstrap.png"
+                },
+                {
+                    "name": "AngularJS",
+                    "logo": "img/logos/reactjs.png"
+                },
+                {
+                    "name": "SQLServer",
+                    "logo": "img/logos/sqlserver.png"
+                }
+            ]
+        }
+    ]
+}

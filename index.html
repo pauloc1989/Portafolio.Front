@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<!-- Meta -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Title -->
+	<title>Portafolio :: Paulo Urbano Rivera</title>
+
+	<!-- CSS Plugins -->
+	<!-- <link rel="stylesheet" href="css/plugins/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.css">
+	<link rel="stylesheet" href="css/plugins/font-awesome.css">
+	<link rel="stylesheet" href="css/plugins/magnific-popup.css">
+	<link rel="stylesheet" href="css/plugins/simplebar.css">
+	<link rel="stylesheet" href="css/plugins/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/plugins/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/plugins/jquery.animatedheadline.css">
+	<!-- <link rel="stylesheet" href="css/slick/slick.css">
+	<link rel="stylesheet" href="css/slick/slick-theme.css"> -->
+	<link rel="stylesheet" href="https://unpkg.com/angular-toastr/dist/angular-toastr.css" />
+
+	<!-- CSS Base -->
+	<link rel="stylesheet" href="css/style-dark.css">
+
+	<!-- Settings Style -->
+	<link rel="stylesheet" type="text/css" href="css/settings/left-nav.css" />
+	<link rel="stylesheet" type="text/css" href="css/settings/green-color.css" />
+
+	<style>
+		.fade.in {
+			opacity: 1;
+		}
+
+		.modal.in .modal-dialog {
+			-webkit-transform: translate(0, 0);
+			-o-transform: translate(0, 0);
+			transform: translate(0, 0);
+		}
+
+		.modal-backdrop.in {
+			filter: alpha(opacity=50);
+			opacity: .5;
+		}
+	</style>
+</head>
+
+<body ng-app="portafolioApp">
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="loading-area">
+			<div class="circle"></div>
+		</div>
+		<div class="left-side"></div>
+		<div class="right-side"></div>
+	</div>
+
+	<!-- Main Site -->
+	<div id="home">
+		<div id="about">
+			<div id="resume">
+				<div id="portfolio">
+					<div id="blog">
+						<!-- <div id="contact"> -->
+							<div class="header-mobile">
+								<a class="header-toggle"><i class="fas fa-bars"></i></a>
+								<h2>Paulo</h2>
+							</div>
+
+							<nav class="header-main" data-simplebar>
+								<div class="logo">
+									<img src="img/logo.png" alt="">
+								</div>
+
+								<ul>
+									<li data-tooltip="home" data-position="top">
+										<a href="#home" class="icon-h fas fa-house-damage"></a>
+									</li>
+									<li data-tooltip="about" data-position="top">
+										<a href="#about" class="icon-a fas fa-user-tie"></a>
+									</li>
+									<li data-tooltip="resume" data-position="top">
+										<a href="#resume" class="icon-r fas fa-address-book"></a>
+									</li>
+									<!-- <li data-tooltip="portfolio" data-position="top">
+										<a href="#portfolio" class="icon-p fas fa-briefcase"></a>
+									</li> -->
+									<li data-tooltip="portafolio" data-position="top">
+										<a href="#blog" class="icon-p fas fa-briefcase"></a>
+									</li>
+									<!-- <li data-tooltip="contact" data-position="bottom">
+										<a href="#contact" class="icon-c fas fa-envelope"></a>
+									</li> -->
+								</ul>
+							</nav>
+
+							<!-- Home Section -->
+							<div class="pt-home" ng-controller="homeController"
+								style="background-image: url('img/home-bg.png')">
+								<section>
+									<div class="banner">
+										<h1>Paulo Urbano Rivera</h1>
+										<p class="cd-headline rotate-1">
+											<span>Soy</span>
+											<span class="cd-words-wrapper">
+												<b ng-class="row.first ? 'is-visible' : ''"
+													ng-repeat="row in iam">{{row.name}}</b>
+											</span>
+										</p>
+									</div>
+
+									<div class="social">
+										<ul>
+											<li ng-repeat="row in social" ng-show="row.visible"><a href="{{row.url}}"
+													target="_blank"><i class="fab" ng-class="'{{row.icon}}'"></i></a>
+											</li>
+										</ul>
+									</div>
+								</section>
+							</div>
+
+							<!-- About Section -->
+							<div class="page pt-about" ng-controller="aboutController" data-simplebar>
+								<section class="container">
+									<div class="header-page mt-70 mob-mt">
+										<h2>Sobre mí</h2>
+										<span></span>
+									</div>
+
+									<div class="row mt-100">
+										<div class="col-lg-12 col-sm-12">
+											<div class="info box">
+												<div class="row">
+													<div class="col-lg-3 col-sm-4">
+														<div class="photo">
+															<img alt="" src="img/profile.png">
+														</div>
+													</div>
+													<div class="col-lg-9 col-sm-8">
+														<h4>Paulo Urbano Rivera</h4>
+														<div class="loc">
+															<i class="fas fa-map-marked-alt"></i> Santiago, Chile
+														</div>
+														<p>Hola! Soy Paulo, apasionado totalmente con el desarrollo de
+															aplicaciones desde 2011. Si bien cuando comencé a estudiar
+															programación pensaba que haría juegos super geniales
+															(realidad de muchos colegas), con el tiempo aprendí a
+															tomarle el gusto, entender y darme cuenta cada día que el
+															desarrollo de software es un verdadero arte, creando
+															verdaderos mundillos digitales desde tu imaginación.
+															Felizmente puedo decir que hago, trabajo y soy lo que me
+															gusta.
+														</p>
+														<p>Si bien mi trabajo es parte importante de mi vida, nunca
+															suplantará el amor que siento por mi familia, por mis dos
+															hermosos pequeños hombrecitos, por los tiempos libres que
+															pasó con ellos o conmigo. Por mis tan útiles y amados tubos
+															de escape, como son la fotografía (muy amateur aún), la
+															capoeira y el viajar sin tantas restricciones cuando los
+															astros se alinean.
+														</p>
+														<p>Gracias por el tiempo de leerme y visitarme, eres más que
+															bienvenido =)</p>
+													</div>
+
+													<div class="col-lg-3 col-sm-4" ng-repeat="row in jobInfo">
+														<div class="info-icon">
+															<i class="fas" ng-class="'{{row.icon}}'"></i>
+															<div class="desc-icon">
+																<h6 ng-bind="row.title"></h6>
+																<p ng-bind="row.subtitle"></p>
+															</div>
+														</div>
+													</div>
+													<div class="col-lg-3 col-sm-12 pt-50">
+														<a href="resources/CV.pdf" class="btn-st" download>Descarga
+															CV</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="row mt-100">
+										<div class="col-md-12">
+											<div class="header-box mb-50">
+												<h3>Mis interéses</h3>
+											</div>
+										</div>
+
+										<div class="col-lg-12 col-sm-12">
+											<div class="box">
+												<div class="row">
+													<div class="col-lg-3 col-sm-6" ng-repeat="row in interests">
+														<div class="inter-icon">
+															<i class="fas" ng-class="'{{row.icon}}'"
+																style="font-size: 2em;"></i>
+															<div class="desc-inter">
+																<h6 ng-bind="row.name"></h6>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="row mt-100">
+										<div class="col-md-12">
+											<div class="header-box mb-50">
+												<h3>Servicios</h3>
+											</div>
+										</div>
+
+										<div class="col-lg-6 col-sm-6" ng-repeat="row in services">
+											<div class="service box mb-400">
+												<i class="fas" ng-class="'{{row.icon}}'"></i>
+												<h4 ng-bind="row.title"></h4>
+												<p ng-bind="row.description"></p>
+											</div>
+										</div>
+									</div>
+
+									<div class="row testimonial mt-60">
+										<div class="col-md-12">
+											<div class="header-box mb-50">
+												<h3>Testimonios</h3>
+											</div>
+										</div>
+
+										<div class="owl-carousel owl-theme">
+											<div class="testimonial-item">
+												<div class="media">
+													<img src="img/testimonials/mike diaz.jpg">
+													<div class="content">
+														<h4>Mike Díaz Manrique</h4>
+														<p>Scrum Master ACHS</p>
+													</div>
+													<ul class="rating">
+														<li><a href="https://www.linkedin.com/in/mikediazsrummaster/"
+																target="_blank"><i class="fab fa-linkedin"
+																	style="font-size: 2em; color:#25ca7f !important"></i></a>
+														</li>
+													</ul>
+												</div>
+												<div class="comment pt-30">
+													<p>
+														En el tiempo que trabaje con Paulo en la célula IA, yo como SM
+														pude validar y constatar su capacidad técnica y profesional con
+														la que pudimos afrontar diversos problemas, así lo hicimos en
+														múltiples requerimientos que nos solicitaban los Stakeholders y
+														el PO, hicimos muchas cosas importantes y de gran valor para el
+														negocio y que requerían de conocimientos técnicos, habilidades
+														blandas y comunicaciones inter personales con diversas áreas de
+														negocios, una de las que puedo recordar fue la creación de un
+														BOT que se pudiera llamar a través de una cuenta empresarial de
+														twitter, en la cual nuestro compañero destaco un buen desempeño,
+														buena fluidez, buen manejo de la situación, buena comunicación y
+														un buen resultado en la aplicación...
+													</p>
+												</div>
+											</div>
+
+											<div class="testimonial-item">
+												<div class="media">
+													<img src="img/testimonials/raul villarroel.jpg">
+													<div class="content">
+														<h4>Raúl Villarroel</h4>
+														<p>Jefe de Innovación Caja18</p>
+													</div>
+													<ul class="rating">
+														<li><a href="https://www.linkedin.com/in/ra%C3%BAl-villarroel-larenas-91542a56/"
+																target="_blank"><i class="fab fa-linkedin"
+																	style="font-size: 2em; color:#25ca7f !important"></i></a>
+														</li>
+													</ul>
+												</div>
+												<div class="comment pt-30">
+													<p>
+														Paulo, es una persona muy metódica y analítica, capaz de
+														escuchar y proponer soluciones a las problemáticas que se
+														generan el día a día de sus labores.
+														Con un alto nivel de preparación en el ámbito de la tecnología
+														asociada a la gestión y desarrollo de Sistemas, sobre todo en
+														ambiente WEB.
+														Respetuoso y entiende claramente la jerarquización de la Empresa
+														en la cual desempeña sus labores.
+													</p>
+												</div>
+											</div>
+
+											<div class="testimonial-item">
+												<div class="media">
+													<img src="img/testimonials/fanny gallardo.jpg">
+													<div class="content">
+														<h4>Fanny Gallardo</h4>
+														<p>Scrum Master Entel</p>
+													</div>
+													<ul class="rating">
+														<li><a href="https://www.linkedin.com/in/fanny-gallardo/"
+																target="_blank"><i class="fab fa-linkedin"
+																	style="font-size: 2em; color:#25ca7f !important"></i></a>
+														</li>
+													</ul>
+												</div>
+												<div class="comment pt-30">
+													<p>
+														Tuve el grato placer de trabajar con Paulo Urbano el año pasado mientras se desempeñaba como Desarrollador Cognitivo en la Célula de Inteligencia Artificial de Entel. Tuvo como responsabilidad el desarrollo continuo del chatbot de la compañía, donde trabajó con tecnologías Node, IBM Watson, desarrollo de integraciones con API Management y la nube de Amazon. Logró destacarse por su capacidad de análisis, logros técnicos y trato con el resto del equipo. Sin dudas es una persona muy creativa y preocupada por su desarrollo personal.
+													</p>
+												</div>
+											</div>
+
+											<div class="testimonial-item">
+												<div class="media">
+													<img src="img/testimonials/alexy angulo.png">
+													<div class="content">
+														<h4>Alexy Angulo Vega</h4>
+														<p>Scrum Master Entel</p>
+													</div>
+													<ul class="rating">
+														<li><a href="https://www.linkedin.com/in/alexy-javier-angulo-vega-838bb138/"
+																target="_blank"><i class="fab fa-linkedin"
+																	style="font-size: 2em; color:#25ca7f !important"></i></a>
+														</li>
+													</ul>
+												</div>
+												<div class="comment pt-30">
+													<p>
+														Paulo dentro de las células ha demostrado que cumple con los
+														pilares de la Agilidad destacando su resiliencia, adaptación
+														ante el cambio y trabajo en equipo. Todas estas son
+														fundamentales y necesarias para conseguir un equipo cohesionado
+														que cumple y supera las expectativas de productividad de la
+														misma.
+														A nivel individual destaca su iniciativa, proactividad y
+														capacidad de resolver los problemas que se le encomiendan, se
+														destaca ante sus pares al momento de enfrentarse a impedimentos,
+														los cuales resuelve de forma autónoma.
+													</p>
+												</div>
+											</div>
+
+											<div class="testimonial-item">
+												<div class="media">
+													<img src="img/testimonials/nhora suarez.png">
+													<div class="content">
+														<h4>Nhora Suárez</h4>
+														<p>Coordinador de Outsourcing</p>
+													</div>
+													<ul class="rating">
+														<li><a href="https://www.linkedin.com/in/nhora-suarez-a7356425/"
+																target="_blank"><i class="fab fa-linkedin"
+																	style="font-size: 2em; color:#25ca7f !important"></i></a>
+														</li>
+													</ul>
+												</div>
+												<div class="comment pt-30">
+													<p>
+														Paulo Urbano es un profesional altamente comprometido con su
+														trabajo, apasionado por la tecnologia y con vocación de
+														servicio. Doy fe de su excelente desempeño, siempre en busca de
+														la excelencia.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+							</div>
+
+							<!-- Resume Section -->
+							<div class="page pt-resume" ng-controller="resumeController" data-simplebar>
+								<section class="container">
+									<div class="header-page mt-70 mob-mt">
+										<h2>Currículum</h2>
+										<span></span>
+									</div>
+
+									<div class="row mt-100">
+										<div class="col-lg-12 col-sm-12">
+											<div class="header-box mb-50">
+												<h3>Experiencia</h3>
+											</div>
+
+											<div class="experience box">
+												<div class="item" ng-repeat="row in resume | orderBy: '-initDate'">
+													<div class="main">
+														<h4 ng-bind="row.title"></h4>
+														<p><i class="far fa-calendar-alt"></i>{{row.period}} |
+															{{row.company}}</p>
+													</div>
+													<p ng-bind="row.description"></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="row mt-100">
+										<div class="col-md-12">
+											<div class="header-box mb-50">
+												<h3>Skills</h3>
+											</div>
+										</div>
+									</div>
+
+									<div class="box skills">
+										<div class="row">
+											<div class="col-lg-6 col-sm-6">
+												<div class="skill-item" ng-repeat="row in skills.back">
+													<h4 class="progress-title" ng-bind="row.title"></h4>
+													<div class="progress">
+														<div class="progress-bar" ng-style="{'width':row.value + '%'}">
+															<div class="progress-value">{{row.value}}%</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-6 col-sm-6">
+												<div class="skill-item" ng-repeat="row in skills.front">
+													<h4 class="progress-title" ng-bind="row.title"></h4>
+													<div class="progress">
+														<div class="progress-bar" ng-style="{'width':row.value + '%'}">
+															<div class="progress-value">{{row.value}}%</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+							</div>
+
+							<!-- Blog Section -->
+							<div class="page pt-blog" ng-controller="portafolioController" data-simplebar>
+								<section class="container">
+									<div class="header-page mt-70 mob-mt">
+										<h2>Portafolio</h2>
+										<span></span>
+									</div>
+
+									<div class="row blog-masonry mt-100 mb-50">
+										<div class="col-lg-4 col-sm-6" ng-repeat="row in portafolio | orderBy: '-year'">
+											<div class="blog-item">
+												<div class="thumbnail">
+													<img src="{{row.img !== '' ? row.img : 'img/portfolio/default.png'}}" alt="{{row.project}}">
+												</div>
+												<h4 ng-bind="row.project"></h4>
+												<ul>
+													<li ng-bind="row.company"></li>
+													<li ng-bind="row.type"></li>
+												</ul>
+												<div class="blog-btn">
+													<a href="javascript:void(0)" class="btn-st"
+														ng-click="open(row.project)">Más detalles</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+							</div>
+
+							<!-- Contact Section -->
+							<!-- <div class="page pt-contact" ng-controller="contactController" data-simplebar>
+								<section class="container">
+									<div class="header-page mt-70 mob-mt">
+										<h2>Contacto</h2>
+										<span></span>
+									</div>
+
+									<div class="row mt-100">
+										<div class="col-lg-12 col-sm-12">
+											<div class="contact-form ">
+												<form class="box contact-valid" id="contact-form" name="mainForm"
+													novalidate>
+													<div class="row">
+														<div class="col-lg-6 col-sm-12">
+															<input type="text" name="name" id="name"
+																class="form-control" ng-model="current.name"
+																autocomplete="off" placeholder="Nombre *" required>
+														</div>
+														<div class="col-lg-6 col-sm-12">
+															<input type="email" name="email" id="email"
+																class="form-control" ng-model="current.email"
+																autocomplete="off" placeholder="Email *" required>
+														</div>
+														<div class="col-lg-12 col-sm-12">
+															<textarea class="form-control" name="note" id="note"
+																ng-model="current.message" placeholder="Tu mensaje..."
+																required></textarea>
+														</div>
+														<div class="col-lg-12 col-sm-12 text-center">
+															<button type="button" class="btn-st"
+																ng-disabled="!mainForm.$valid || loading"
+																ng-click="send(current)">Enviar</button>
+															<div id="loader">
+																<i class="fas fa-sync"></i>
+															</div>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+
+									<div class="box contact-info">
+										<div class="row">
+											<div class="col-lg-6 col-sm-12 info" ng-repeat="row in contactInfo">
+												<i ng-class="row.icon"></i>
+												<p ng-bind="row.info"></p>
+												<span ng-bind="row.title"></span>
+											</div>
+										</div>
+									</div>
+								</section>
+							</div> -->
+						<!-- </div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<!-- <script src="js/bootstrap.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js"></script>
+	<script src="js/simplebar.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.animatedheadline.min.js"></script>
+	<script src="js/jquery.easypiechart.js"></script>
+	<script src="js/jquery.validation.js"></script>
+	<script src="js/tilt.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.0/angular.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.0/angular-route.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.0/angular-resource.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.0/angular-animate.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.0/angular-sanitize.min.js"></script> -->
+	<!-- <script src="js/slick.min.js"></script>
+	<script src="js/angular-slick.min.js"></script> -->
+	<script src="https://unpkg.com/angular-toastr/dist/angular-toastr.tpls.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.js"></script>
+
+	<script src="app/index.js"></script>
+	<script src="app/common/factories.js"></script>
+	<script src="app/controllers/homeController.js"></script>
+	<script src="app/controllers/aboutController.js"></script>
+	<script src="app/controllers/resumeController.js"></script>
+	<!-- <script src="app/controllers/contactController.js"></script> -->
+	<script src="app/controllers/portafolioController.js"></script>
+</body>
+
+</html>
